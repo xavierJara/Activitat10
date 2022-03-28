@@ -11,6 +11,11 @@ public class STRINGMARAVILLOSO{
         System.out.println("LA versió que tenim a github ha estat actualitzada i és mes actual que la que tinc en local");
  
         //Imprime los primeros dos triangulos de izq a derecha de la primera parte (parte superios)
+       imprimirTriangulosSuperiores(M);
+        //Imprime los segundos dos triangulos de izq a derecha de la segunda parte (parte inferior)
+       imprimirTriangulosInferiores(M);
+    }
+public static void imprimirTriangulosSuperiores(String M){
         for (int i =0; i<M.length();i++){
             //Imprime espacios de la primera parte para el primer triangulo 
             for (int j=0; j < i  ;++j){
@@ -30,8 +35,9 @@ public class STRINGMARAVILLOSO{
             }
             System.out.println();
         }
-        //Imprime los segundos dos triangulos de izq a derecha de la segunda parte (parte inferior)
-        for (int i =0; i<M.length();i++){
+       }   
+      public static void imprimirTriangulosInferiores(String M){
+           for (int i =0; i<M.length();i++){
             //Imprime primer triangulo de la segunda parte
             for (int j= i; j<M.length(); ++j){
                 System.out.print(M.charAt(j));
@@ -46,5 +52,5 @@ public class STRINGMARAVILLOSO{
             }
             System.out.println();
         }
-    }    
+      }
 }
